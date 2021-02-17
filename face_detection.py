@@ -13,12 +13,13 @@ grayscale_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 face_detect = trained_data.detectMultiScale(grayscale_img)
 print(face_detect)
 
-# rectangular boxes identifying faces 
-# setting coordinates
+# setting coordinates to detect the first face from top left to bottom right
 (x, y, w, h) = face_detect[0]
 
+# rectangular boxes identifying faces 
+# coordinates set to x,y,w,h and color set to red with a border thickness of 7 
 # cv2.rectangle(img, (150, 212), (920, 920+212), (0, 255, 0), 2)
-cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 225), 2)
+cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 225), 7)
 
 # displaying images + pauses the python program with the image for viewing
 # clicking any key will close the app
