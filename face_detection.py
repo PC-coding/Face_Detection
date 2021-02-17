@@ -18,7 +18,7 @@ print(face_detect)
 (x, y, w, h) = face_detect[0]
 
 # cv2.rectangle(img, (150, 212), (920, 920+212), (0, 255, 0), 2)
-cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
+cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 225), 2)
 
 # displaying images + pauses the python program with the image for viewing
 # clicking any key will close the app
