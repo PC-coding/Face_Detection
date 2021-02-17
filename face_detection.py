@@ -14,8 +14,11 @@ face_detect = trained_data.detectMultiScale(grayscale_img)
 print(face_detect)
 
 # rectangular boxes identifying faces 
-cv2.rectangle(img, (150, 212), (920, 920+212), (0, 255, 0), 2)
-#cv2.rectangle(img, (x+y), (x+w, y+h), (0, 255, 0), 2)
+# setting coordinates
+(x, y, w, h) = face_detect[0]
+
+# cv2.rectangle(img, (150, 212), (920, 920+212), (0, 255, 0), 2)
+cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
 # displaying images + pauses the python program with the image for viewing
 # clicking any key will close the app
