@@ -1,4 +1,5 @@
 import cv2
+from random import randrange
 
 # load pre-trained data on face frontals from opencv
 trained_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -20,7 +21,7 @@ print(face_detect)
 # coordinates set to x,y,w,h and color set to red with a border thickness of 7 
  # cv2.rectangle(img, (150, 212), (920, 920+212), (0, 255, 0), 2)
 for (x, y, w, h) in face_detect:
-    cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 225), 7)
+    cv2.rectangle(img, (x, y), (x+w, y+h), (randrange(256), randrange(256), randrange(256)), 7)
 
 # displaying images + pauses the python program with the image for viewing
 # clicking any key will close the app
