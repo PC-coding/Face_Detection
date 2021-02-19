@@ -17,12 +17,12 @@ while True:
     successful_frame_read, frame = webcam.read()
    # boolean (always true)       #img 
 
+    # conversion to grayscale
+    grayscale_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 """
 # waits in the program until a key is pressed
 # key = cv2.waitKey(1)
 
-# conversion to grayscale
-grayscale_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # detection algorithm
 face_detect = trained_data.detectMultiScale(grayscale_img)
