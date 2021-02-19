@@ -12,7 +12,7 @@ img = cv2.imread('Cillian.png')
 webcam = cv2.VideoCapture(0)
 
 # waits in the program until a key is pressed
-key = cv2.waitKey(1)
+# key = cv2.waitKey(1)
 
 # conversion to grayscale
 grayscale_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
