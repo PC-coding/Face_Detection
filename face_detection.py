@@ -11,6 +11,13 @@ img = cv2.imread('Cillian.png')
 # capturing video from webcam
 webcam = cv2.VideoCapture(0)
 
+# iterate over frames continously
+while True:
+    # reading current frame
+    successful_frame_read, frame = webcam.read()
+   # boolean (always true)       #img 
+
+
 # waits in the program until a key is pressed
 # key = cv2.waitKey(1)
 
@@ -35,5 +42,6 @@ for (x, y, w, h) in face_detect:
 # message will appear
 cv2.imshow('Face Detector', img)
 cv2.waitKey()
+"""
 
 print('success')
