@@ -17,7 +17,7 @@ while True:
     successful_frame_read, frame = webcam.read()
    # boolean (always true)       #img 
 
-
+"""
 # waits in the program until a key is pressed
 # key = cv2.waitKey(1)
 
