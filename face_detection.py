@@ -18,7 +18,11 @@ while True:
    # boolean (always true)       #img 
 
     # conversion to grayscale
-    grayscale_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    grayscale_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+    cv2.imshow('Face Detector', grayscale_img)
+    cv2.waitKey()
+
 """
 # waits in the program until a key is pressed
 # key = cv2.waitKey(1)
