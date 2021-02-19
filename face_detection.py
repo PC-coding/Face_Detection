@@ -7,6 +7,10 @@ trained_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 # choosing image to detect faces in
 img = cv2.imread('Cillian.png')
 
+
+# capturing video from webcam
+webcam = cv2.VideoCapture(0)
+
 # conversion to grayscale
 grayscale_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
