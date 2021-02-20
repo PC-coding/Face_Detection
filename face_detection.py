@@ -20,16 +20,18 @@ while True:
     # conversion to grayscale
     grayscale_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
+    # detection algorithm
+    face_detect = trained_data.detectMultiScale(grayscale_img)
+
+    
     cv2.imshow('Face Detector', grayscale_img)
-    cv2.waitKey()
+    cv2.waitKey(1)
 
 """
 # waits in the program until a key is pressed
 # key = cv2.waitKey(1)
 
 
-# detection algorithm
-face_detect = trained_data.detectMultiScale(grayscale_img)
 print(face_detect)
 
 # setting coordinates to detect the first face from top left to bottom right
