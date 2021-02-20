@@ -28,27 +28,8 @@ while True:
     for (x, y, w, h) in face_detect:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (randrange(256), randrange(256), randrange(256)), 7)
 
+    # displaying images + pauses the python program with the image for viewing
     cv2.imshow('Face Detector', frame)
     cv2.waitKey(1)
-
-"""
-# waits in the program until a key is pressed
-# key = cv2.waitKey(1)
-
-
-print(face_detect)
-
-# setting coordinates to detect the first face from top left to bottom right
- # (x, y, w, h) = face_detect[0]
-
-
-
-
-# displaying images + pauses the python program with the image for viewing
-# clicking any key will close the app
-# message will appear
-cv2.imshow('Face Detector', img)
-cv2.waitKey()
-"""
 
 print('success')
