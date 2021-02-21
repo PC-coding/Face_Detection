@@ -32,4 +32,8 @@ while True:
     cv2.imshow('Face Detector', frame)
     cv2.waitKey(1)
 
+    # closes program when the q key is pressed
+    if key == 81 or key == 113:
+        break
+
 print('success')
