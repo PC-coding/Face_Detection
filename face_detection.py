@@ -30,7 +30,7 @@ while True:
 
     # displaying images + pauses the python program with the image for viewing
     cv2.imshow('Face Detector', frame)
-    cv2.waitKey(1)
+    key = cv2.waitKey(1)
 
     # closes program when the q key is pressed
     if key == 81 or key == 113:
