@@ -1,3 +1,5 @@
-# Face-Detection App
+<h1> Face Detection App </h1>
 
-# AI Project
+# What I learned
+- Introduction to Artificial Intelligence and Machine Learning in Python
+- Using OpenCV library 
