@@ -7,5 +7,5 @@
 # Demo
 
 # Sources
-<a href='https://docs.opencv.org/master/'>OpenCV documentation</a>
+<a href='https://docs.opencv.org/master/'>OpenCV documentation</a></br>
 <a href='https://www.tutorialspoint.com/machine_learning_with_python/index.htm'>Machine Learning introduction</a>
