@@ -10,7 +10,6 @@ data with the haar cascades are the main sources for this project.
 - Introduction to Artificial Intelligence and Machine Learning in Python
 - Using OpenCV library 
 
-# Demo
 
 # Sources
 <a href='https://docs.opencv.org/master/'>OpenCV documentation</a></br>
